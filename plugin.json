@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ranklybee",
+  "version": "1.0.0",
+  "description": "Work with your RanklyBee SEO workspace: Google Search Console and Bing data, content plans and articles, backlinks, outreach, community leads, AI visibility and social distribution.",
+  "author": {
+    "name": "Big Whale Ltd",
+    "email": "support@ranklybee.com",
+    "url": "https://ranklybee.com"
+  },
+  "homepage": "https://ranklybee.com/docs/mcp",
+  "keywords": [
+    "RanklyBee",
+    "SEO",
+    "Search Console",
+    "content",
+    "backlinks",
+    "outreach"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "RanklyBee",
+        "shortDescription": "SEO, content and backlinks",
+        "longDescription": "RanklyBee helps website owners grow organic search traffic. This plugin connects to your RanklyBee account so you can read and act on your Projects from a chat.\n\nRead Google Search Console performance (clicks, impressions, CTR, positions, striking-distance queries, cannibalization, decaying pages, new pages, tracked keywords, URL indexing) and Bing Webmaster Tools data, and get SEO health, CTR opportunities and traffic drop diagnoses. Plan content, write and edit articles, review improvements and publish to your connected CMS. Track earned backlinks, find link prospects and contacts, draft outreach emails and send them from your connected mailbox, and carry out user-approved backlink submissions. Review scored leads from community posts, see how AI assistants describe your brand, and schedule social posts.\n\nYou sign in with your RanklyBee account and choose the permissions this connection gets. Reading is on by default; anything that changes data, sends email or publishes stays off until you turn it on.",
+        "developerName": "Big Whale Ltd",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive",
+          "Write"
+        ],
+        "websiteURL": "https://ranklybee.com",
+        "supportURL": "https://ranklybee.com/help",
+        "privacyPolicyURL": "https://ranklybee.com/privacy",
+        "termsOfServiceURL": "https://ranklybee.com/terms",
+        "defaultPrompt": [
+          "Show my Search Console clicks and impressions for the last 28 days.",
+          "Which of my pages get impressions but few clicks?",
+          "Check whether my backlink submission profile is ready."
+        ],
+        "brandColor": "#0B1A3A",
+        "brandColorDark": "#FFC20E",
+        "composerIcon": "./assets/logo.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
